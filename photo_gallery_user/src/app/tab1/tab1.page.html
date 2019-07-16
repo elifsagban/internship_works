@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Main Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-img [src]="img/collage.PNG" alt="Photo Collage" > </ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>Bloggy</ion-card-subtitle>
+        <ion-card-title>Welcome {{ adim }} ! </ion-card-title>
+      </ion-card-header>
+      
+    </ion-card>
+    
+  </ion-content>
+  <ion-content class="has-header padding" ng-controller="ImageController">
+    <ion-button class="button button-full button-energized" (click)="download()" expand= "block">
+      Add image
+    </ion-button>
+  </ion-content>
