@@ -32,6 +32,7 @@ export class Tab2Page {
       username: this.uname,
       password: this.password
     });
+
     this.storage.set('users', this.users);
 
     this.storage.set(this.key, this.uname);
